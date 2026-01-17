@@ -6,20 +6,21 @@ public class area {
         int a = dis.nextInt();
         System.out.print("enter number b");
         int b = dis.nextInt();
-        System.out.print("Enter 1 for add,2 for subtract ,3 for multiply,4 for divide,5 for remainder");
-        int n = dis.nextInt();
+        System.out.print("Enter operator:like +,-,*,/,%");
+        char n = dis.next().charAt(0);
         switch (n){
-            case 1: System.out.println(a+b);
+            case '+' : System.out.println(a+b);
                 break;
-            case 2: System.out.println(a-b);
+            case '-' : System.out.println(a-b);
                 break;
-            case 3: System.out.println(a*b);
+            case '*' : System.out.println(a*b);
                 break;
-            case 4: System.out.println(a/b);
+            case '/' : System.out.println(a/b);
                 break;
-            case 5: System.out.println(a%b);
+            case '%' : System.out.println(a%b);
                 break;
-            default: System.out.println("invalid button");
+            default: System.out.println("operator");
         }
+
         }
     }
