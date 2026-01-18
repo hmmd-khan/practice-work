@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String args[]){
+        System.out.print("Enter number");
+        Scanner dis = new Scanner(System.in);
+        int n = dis.nextInt();
+        System.out.print("Enter number");
+        int i= dis.nextInt();
+        while(n<=i){
+            if((n&1)!=0){
+                System.out.println(n);
+            }
+            n++;
+        }
+    }
+}
