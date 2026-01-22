@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class area {
+    public static void main(String args[]){
+        System.out.print("Enter number");
+        Scanner sc = new Scanner(System.in);
+        int a=0;
+        int pop=0;
+        int total=0;
+        while(pop>=0){
+        pop = sc.nextInt();
+        if(pop<1) break;
+        total=total+pop;
+        a++;
+        }
+        if(a==0){
+            System.out.println("enter the first number positive");
+        }
+        else {
+            double avg = total / a;
+            System.out.println(avg);
+        }
+    }
+}
